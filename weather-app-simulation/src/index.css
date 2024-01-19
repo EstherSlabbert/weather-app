@@ -1,0 +1,103 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2019/05/19/23/47/clouds-4215608_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #f8b400;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  color:#006400;
+}
+
+.weather.icon {
+  color: #ec7f02;
+}
+
+.weather.icon:hover {
+  color: #e0e303;
+}
+
+.warm {
+  color:#cd0202;
+
+}
+
+.cold {
+  color:#354abf;
+}
+
+.temperature.icon,
+.wind.icon {
+  padding-right: 1%;
+}
+
+.day {
+  color: #dca203;
+}
+
+.day:hover {
+  color: #cf4302;
+}
+
+.night {
+  color: #023141;
+}
+
+.night:hover {
+  color: #06c49e;
+}
+
+.wind {
+  color: #077498;
+}
+
+.location.icon {
+  color: #006400;
+}
+
+.tooltip {
+  opacity: 0.6 !important;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #004445;
+  }
+}
