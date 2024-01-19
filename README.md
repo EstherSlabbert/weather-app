@@ -1,6 +1,6 @@
 # React Weather App
 
-Basic weather app created using the React framework for JavaScript and the Vite package. The APIs I used in this project are https://api.open-meteo.com/v1/forecast for the weather information and https://geocode.maps.co/reverse for the reverse geolocation information (turning coordinates for longitude and latitude to location name).
+Basic weather app created using the React framework for JavaScript and the Vite package. The APIs I used in this project are https://api.open-meteo.com/v1/forecast for the weather information and https://geocode.maps.co/reverse for the reverse geolocation information (turning coordinates for longitude and latitude to location name). You will need to replace the API key value in the `.env` file for the project to work for you.
 
 ## Getting started
 
