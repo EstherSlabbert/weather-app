@@ -2,11 +2,22 @@
 
 Basic weather app created using the React framework for JavaScript and the Vite package. **Make sure to hover over the icons** when running the project to see the tooltips.
 
-The APIs I used in this project are https://api.open-meteo.com/v1/forecast for the weather information and https://geocode.maps.co/ for the reverse geolocation information (turning coordinates for longitude and latitude to location name).
+The APIs I used in this project are https://api.open-meteo.com/v1/forecast for the weather information and https://geocode.maps.co/ for the reverse geolocation information (turning coordinates for longitude and latitude to location name). It only has the single home page with weather info for a specific location (based on user location or the default is set to London, UK).
 
 The `weather-app` directory contains the app that connects with the various APIs. You will need to *replace the API key value in the `.env` file* for the project in `weather-app` directory to work for you.
 
 The `weather-app-simulation` directory contains the same weather app, but with simulated API calls to display data that you can edit and trial without any need for an API or API key.
+
+## Weather App in action
+
+Home:
+
+<img src="./screenshots/Screenshot01.png" alt="Screenshot1: home screen" />
+
+Hover results:
+
+<img src="./screenshots/Screenshot02.png" alt="Screenshot2: home screen hover effects" style="width: 20%;" /><img src="./screenshots/Screenshot03.png" alt="Screenshot3: home screen hover effects" style="width: 20%;" /><img src="./screenshots/Screenshot04.png" alt="Screenshot4: home screen hover effects" style="width: 20%;" /><img src="./screenshots/Screenshot05.png" alt="Screenshot5: home screen hover effects" style="width: 20%;" /><img src="./screenshots/Screenshot06.png" alt="Screenshot6: home screen hover effects" style="width: 20%;" />
+
 
 ## Getting started
 
