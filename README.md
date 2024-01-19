@@ -56,16 +56,7 @@ Once these dependencies are installed then the code can be run by navigating to 
 4. Access your environment variables shown in the code below:
   
     ```jsx
-    import { defineConfig, loadEnv } from 'vite';
-    
-    export default defineConfig(({ command, mode }) => {
-      const env = loadEnv(mode, process.cwd());
-      return {
-        define: {
-          'process.env': env
-        }
-      };
-    });
+    const apiKey = import.meta.env.VITE_APP_KEY;
     ```
 
 *Note:* Vite will load the `.env` file at the start of the application. Restart the server after making changes to the `.env` file
