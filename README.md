@@ -26,7 +26,7 @@ Dependencies for this project:
 "react-tooltip": "^5.25.2"
 ```
 
-To install the dependencies install Node.js and npm, then use the command `npm i` followed by the package name e.g. `npm i react-tooltip` or `npm i @fortawesome/react-fontawesome` or combine them as follows `npm i react-tooltip @fortawesome/react-fontawesome`.
+To install the dependencies install Node.js and npm, then use the command `npm i`. Or to install individual components use the command `npm i` followed by the package name e.g. `npm i react-tooltip` or `npm i @fortawesome/react-fontawesome` or combine them as follows `npm i react-tooltip @fortawesome/react-fontawesome`.
 
 Once these dependencies are installed then the code can be run by navigating to the correct directory and using the command `npm run dev`.
 
