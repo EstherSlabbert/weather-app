@@ -1,0 +1,1 @@
+This folder contains screenshots of the working weather app to use in the README.md.
