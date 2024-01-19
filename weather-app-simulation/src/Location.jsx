@@ -48,7 +48,7 @@ export default function Location({ latitude, longitude }) {
     if (latitude && longitude) {
       fetchData();
     }
-  }, [latitude, longitude]]);
+  }, [latitude, longitude]);
 
   // test to see if latitude & longitude are passed in correctly
   // if (locationData) {
