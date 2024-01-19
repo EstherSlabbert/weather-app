@@ -45,14 +45,15 @@ export default function Location({ latitude, longitude }) {
         console.error('Error fetching location data:', error);
       }
     };
+    if (latitude && longitude) {
+      fetchData();
+    }
+  }, [latitude, longitude]]);
 
-    fetchData();
-  }, []);
-
-  // test to see if latitude & longitude and locationData present and/ correct
-  if (locationData) {
-    console.log(`${latitude}, ${longitude}`);
-  }
+  // test to see if latitude & longitude are passed in correctly
+  // if (locationData) {
+  //   console.log(`${latitude}, ${longitude}`);
+  // }
 
   return (
     <div>
