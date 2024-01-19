@@ -34,8 +34,16 @@ Once these dependencies are installed then the code can be run by navigating to 
 
 **To set up environment variables with Vite, you can follow these steps:**
 1. Create an `.env` file in the root of your project.
-2. Prefix your environment variables with `VITE_` in the `.env` file. For example, `VITE_APP_KEY=yourapikey`.
-3. In your Vite configuration file (`vite.config.js`), you can use the `loadEnv` helper to load the specific `.env` file based on the mode. Like:
+2. Prefix your environment variables with `VITE_` in the `.env` file. For example, `VITE_API_KEY=yourapikey`.
+3. Access your environment variables shown in the code below:
+  
+    ```jsx
+    const apiKey = import.meta.env.VITE_API_KEY;
+    ```
+
+*Note:* Vite will load the `.env` file at the start of the application. Restart the server after making changes to the `.env` file
+
+In your Vite configuration file (`vite.config.js`), you can use the `loadEnv` helper to load the specific `.env` file based on the mode. Like this:
 
     ```js
     import { defineConfig, loadEnv } from 'vite';
@@ -47,19 +55,11 @@ Once these dependencies are installed then the code can be run by navigating to 
       return {
         // Vite config
         define: {
-          __APP_ENV__: JSON.stringify(env.APP_ENV),
+          __API_ENV__: JSON.stringify(env.API_ENV),
         },
       };
     });
     ```
-
-4. Access your environment variables shown in the code below:
-  
-    ```jsx
-    const apiKey = import.meta.env.VITE_APP_KEY;
-    ```
-
-*Note:* Vite will load the `.env` file at the start of the application. Restart the server after making changes to the `.env` file
 
 ## Acknowledgements
 
